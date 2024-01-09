@@ -402,5 +402,27 @@ input:focus{
     .aboutText{
         font-size: 2rem;
     }
+
+    .popupTitleBlock{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: flex-end;
+    }
     
+    .popupTitle{
+        font-size: 4rem;
+    }
+    
+    .submitBlock{
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
 }
