@@ -43,7 +43,7 @@ p,h1{
 }
 
 .header{
-    min-width: 100%;
+    min-width: 100vw;
     position: absolute;
     padding-left: 8%;
     display: flex;
@@ -162,7 +162,7 @@ p,h1{
 
 
 .FindBlock{
-    padding: 5vh 5vh 5vh 8%;
+    padding: 5vh;
 }
 
 .cardBlock{
@@ -170,12 +170,11 @@ p,h1{
     display: flex;
     gap: 4rem;
     justify-content: center;
-
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 .Card{
-    width: 25%;
     background-color: white;
     color: black;
     display: flex;
@@ -183,7 +182,9 @@ p,h1{
     justify-content: center;
     align-items: flex-start;
     padding: 1rem;
-    white-space: nowrap;
+
+    box-shadow:  -8px 8px 39px 3px rgba(228, 153, 3, 0.32)
+
 }
 
 .Card img{
@@ -212,16 +213,16 @@ p,h1{
 
 .centerCard{
     transform: translateY(-3rem);
-    box-shadow:  -8px 8px 39px 3px rgba(228, 153, 3, 0.32)
+    
 }
 
 .leftCard{
     transform: rotateZ(-5deg);
-    box-shadow:  -8px 8px 39px 3px rgba(228, 153, 3, 0.32)
+  
 }
 .rightCard{
     transform: rotateZ(5deg);
-    box-shadow:  -8px 8px 39px 3px rgba(228, 153, 3, 0.32)
+   
 }
 
 .goldenBig{
