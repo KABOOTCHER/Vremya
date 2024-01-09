@@ -414,6 +414,7 @@ input:focus{
     
     .popupTitle{
         font-size: 4rem;
+        mask-border: 2rem;
     }
     
     .submitBlock{
@@ -424,5 +425,12 @@ input:focus{
         justify-content: space-between;
         flex-direction: column-reverse;
         gap: 3rem;
+    }
+
+
+    .infoBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
