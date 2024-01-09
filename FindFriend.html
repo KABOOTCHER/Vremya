@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src= 
+    "https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VREMYA</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style_find.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="navButton"><img src="img/smallLogo.svg" alt="Logo-Small" class="smLogo"></a>
+        
+        <nav class="navBlock">
+            <a href="index.html" class="navButton">о нас</a>
+            <a href="FindFriend.html" class="navButton">найди друга</a>
+            <a href="#" class="navButton">помочь</a>
+        </nav>
+    </header>
+
+    <main class="main">
+                  
+        
+
+
+        <div class="FindBlock">
+            <div class="titleFlex">
+                <p class="Title">найди друга</p>
+                <a href="#" onclick="event.preventDefault()" class="button goldenBig FilterButton">фильтр</a>
+            </div>
+            <div class="filterBlock modal hidden">
+                <div class="filterCategory">
+                    <p class="filterTitle"> Мой друг:</p>
+                    <div class="filterVariants">
+                        
+                        <div>
+                            
+                            <label for="MyCat">
+                                <input data-target="Cat" class="checkbox" type="checkbox" name="MyCat" id="MyCat">
+                                <span class="fake"></span>
+                                <span class="text">кошка</span>
+                            </label>
+                        </div>
+                        <div>
+                          
+                            <label for="MyDog">
+                                <input data-target="Dog" class="checkbox" type="checkbox" name="MyDog" id="MyDog">
+                                <span class="fake"></span>
+                                <span class="text">собака</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterCategory">
+                    <p class="filterTitle"> Возраст: </p>
+                    <div class="filterVariants gridVariants">
+                        <div>
+                            
+                            <label for="YoungAge">
+                                <input data-target="YoungAge" class="checkbox" type="checkbox" name="YoungAge" id="YoungAge">
+                                <span class="fake"></span>
+                                <span class="text">0 - 1,5 лет</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            
+                            <label for="adultAge">
+                                <input data-target="adultAge" class="checkbox" type="checkbox" name="adultAge" id="adultAge">
+                                <span class="fake"></span>
+                                <span class="text">3 - 5 лет</span>
+                            </label>
+                        </div>
+                        <div>
+                            
+                            <label for="teenAge">
+                                <input data-target="teenAge" class="checkbox" type="checkbox" name="teenAge" id="teenAge">
+                                <span class="fake"></span>
+                                <span class="text">1,5 - 3 лет</span>
+                            </label>
+                        </div>
+                        <div>
+                           
+                            <label for="oldAge">
+                                <input data-target="oldAge" class="checkbox" type="checkbox" name="oldAge" id="oldAge">    
+                                <span class="fake"></span>
+                                <span class="text">5+ лет</span>
+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filterCategory">
+                    <p class="filterTitle"> У меня уже есть:</p>
+                    <div class="filterVariants variantsColumn">
+                        <div>
+                            
+                            <label for="HaveCat">
+                                
+                                <input data-target="HaveCat" class="checkbox" type="checkbox" name="HaveCat" id="HaveCat">
+                                <span class="fake"></span>
+                                <span class="text">кошка</span>  
+                            </label>
+                        </div>
+                        <div>
+                            
+                            <label for="HaveDog">
+                                <input data-target="HaveDog" class="checkbox" type="checkbox" name="HaveDog" id="HaveDog">
+                                <span class="fake"></span>
+                                <span class="text">собака</span>  
+                                
+                            </label>
+                        </div>
+                        <div>
+                            
+                            <label for="HaveOther">
+
+                                <input data-target="HaveOther" class="checkbox" type="checkbox" name="HaveOther" id="HaveOther">
+                                <span class="fake"></span>
+                                <span class="text">другой друг</span> 
+                            </label>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="filterCategory">
+                    <p class="filterTitle"> Готов ли я взять не идеально здорового друга</p>
+                    <div class="filterVariants">
+                        <div>
+                            
+                            <label for="ReadyYes">
+                                <input data-target="ReadyYes" class="checkbox" type="checkbox" name="ReadyYes" id="ReadyYes">
+                                <span class="fake"></span>
+                                <span class="text">да</span> 
+                                </label>
+                        </div>
+                        <div>
+                            
+                            <label for="ReadyNo">
+
+                                <input data-target="ReadyNo" class="checkbox" type="checkbox" name="ReadyNo" id="ReadyNo">
+                                <span class="fake"></span>
+                                <span class="text">нет</span> 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        <div class="cardBlock">
+            <a class="Card Cat teenAge"  href="Pet.html">
+                <div>
+                    <img src="img/alice.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Алиса</p>
+                        <p class="cardThinText">~1,5 года</p>
+                    </div>
+                    <p class="cardSubtext">активная и добрая кошечка,
+                        любит ласку и вкусно покушать</p>
+                </div>
+            </a>
+
+            <a class="Card Dog YoungAge"  href="Pet.html">
+                <div>
+                    <img src="img/max.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Макс</p>
+                        <p class="cardThinText">пол года</p>
+                    </div>
+                    <p class="cardSubtext">маленький Макс вырастет большим и
+                        гордым псом, ваш охранник</p>
+                </div>
+            </a>
+
+            <a class="Card Cat" href="Pet.html">
+                <div>
+                    <img src="img/Makquise.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Маркиза</p>
+                        <p class="cardThinText">2 года</p>
+                    </div>
+                    <p class="cardSubtext">грацию Маркизы невозможно измерить,
+                        любит сидеть на коленях</p>
+                </div>
+            </a>
+            <a class="Card HaveCat Cat YoungAge ReadyNo"  href="Pet.html">
+                <div>
+                    <img src="img/alice.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Алиса</p>
+                        <p class="cardThinText">~1,5 года</p>
+                    </div>
+                    <p class="cardSubtext">активная и добрая кошечка,
+                        любит ласку и вкусно покушать</p>
+                </div>
+            </a>
+
+            <a class="Card Dog ReadyYes "  href="Pet.html">
+                <div>
+                    <img src="img/max.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Макс</p>
+                        <p class="cardThinText">пол года</p>
+                    </div>
+                    <p class="cardSubtext">маленький Макс вырастет большим и
+                        гордым псом, ваш охранник</p>
+                </div>
+            </a>
+
+            <a class="Card Cat HaveDog" href="Pet.html">
+                <div>
+                    <img src="img/Makquise.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Маркиза</p>
+                        <p class="cardThinText">2 года</p>
+                    </div>
+                    <p class="cardSubtext">грацию Маркизы невозможно измерить,
+                        любит сидеть на коленях</p>
+                </div>
+            </a>
+            <a class="Card HaveCat Cat YoungAge ReadyNo"  href="Pet.html">
+                <div>
+                    <img src="img/alice.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Алиса</p>
+                        <p class="cardThinText">~1,5 года</p>
+                    </div>
+                    <p class="cardSubtext">активная и добрая кошечка,
+                        любит ласку и вкусно покушать</p>
+                </div>
+            </a>
+
+            <a class="Card Dog ReadyYes "  href="Pet.html">
+                <div>
+                    <img src="img/max.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Макс</p>
+                        <p class="cardThinText">пол года</p>
+                    </div>
+                    <p class="cardSubtext">маленький Макс вырастет большим и
+                        гордым псом, ваш охранник</p>
+                </div>
+            </a>
+
+            <a class="Card Cat HaveDog" href="Pet.html">
+                <div>
+                    <img src="img/Makquise.png" alt="">
+                    <div class="cardMainText">
+                        <p class="cardName">Маркиза</p>
+                        <p class="cardThinText">2 года</p>
+                    </div>
+                    <p class="cardSubtext">грацию Маркизы невозможно измерить,
+                        любит сидеть на коленях</p>
+                </div>
+            </a>
+        </div>
+        
+       
+
+    </main>
+
+    <footer class="footer">
+        <img class="bigLogo" src="img/bigLogo.svg" alt="">
+
+        <div class="footerContact">
+            <p class="footerText">Большой Смоленский пр., 7, Санкт-Петербург</p>
+            <p class="footerText">8 (911) 099-96-66</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="filter.js"></script>
+</body>
+</html>

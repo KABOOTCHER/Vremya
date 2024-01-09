@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VREMYA</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="pet_style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="navButton"><img src="img/smallLogo.svg" alt="Logo-Small" class="smLogo"></a>
+        <nav class="navBlock">
+            <a href="index.html" class="navButton">о нас</a>
+            <a href="FindFriend.html" class="navButton">найди друга</a>
+            <a href="#" class="navButton">помочь</a>
+        </nav>
+    </header>
+
+    <main class="main ">
+        <section class="popupBlock modal hidden">
+            <div class="popupTitleBlock">
+                <p class="popupTitle">Дорогой друг, я...</p>
+                <img class="BTN-close" src="img/closeBTN.png" alt="">
+            </div>
+            <div class="inputs">
+                <div class="InputBlock">
+                    <label for="USERNAME">
+                    <span>ФИО*</span>
+                    <input  name="USERNAME" id="USERNAME" type="text">
+                    </label>
+                </div>
+                <div class="InputBlock">
+                    <label for="PHONE">
+                    <span>Номер телефона*</span>
+                    <input name="PHONE" id="PHONE" type="text">
+                    </label>
+                </div>
+            </div>
+
+            <div class="submitBlock">
+                <button id="sendButton" type="submit">отправить</button>
+                <p class="submitText">хочу забрать тебя домой <3 </p>
+            </div>
+           
+           
+        </section>
+
+        <div class="overlay hidden"></div>
+        <div class="FlexBlock">
+
+            <div class="Card rightCard">
+                <img src="img/alice.png" alt="">
+                <div class="cardMainText">
+                    <p class="cardName">Я есть любовь</p>
+
+                </div>
+                
+            </div>
+
+            <div>
+                <div class="TitleBlock">
+                    <p class="Title">Алиса,</p>
+                    <p class="Subtitle">~1,5 года</p>
+                </div>
+
+                <a href="#" class="button goldenBig btn-open">ВЗЯТЬ ДОМОЙ</a>
+
+                <p class="tags"> <span>девочка,</span> <br>кастрирована</p>
+
+                <p class="aboutText">активная и добрая кошечка,<br> 
+                    которая <span>обожает ласку</span> и<br>
+                    внимание. Она всегда радушно<br>
+                    встречает всех, кто приходит к<br>
+                    ней в гости, и быстро<br>становится <span>любимицей всех<br>
+                    посетителей приюта.</span> Алиса<br>
+                    также обожает вкусно поесть -</p>
+            </div>
+
+
+
+               
+
+           </div>
+
+           <p class="aboutText">
+            ее главное увлечение это кормежка и она всегда <span> рада новым вкусняшкам.</span> Если вы
+            ищете верного друга, который будет радовать вас своей активностью <br> и нежностью,
+            Алиса идеально подойдет для вас!
+           </p>
+               
+
+
+         
+
+    </main>
+
+    <footer class="footer">
+        <img class="bigLogo" src="img/bigLogo.svg" alt="">
+
+        <div class="footerContact">
+            <p class="footerText">Большой Смоленский пр., 7, Санкт-Петербург</p>
+            <p class="footerText">8 (911) 099-96-66</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

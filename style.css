@@ -1,0 +1,348 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy-UltraLight.woff2);
+    font-weight: 100;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy-Light.woff2);
+    font-weight: 200;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy-Regular.woff2);
+    font-weight: 300;
+}
+@font-face {
+    font-family: NyghtSerif;
+    src: url(fonts/NyghtSerif-Regular.woff2);
+    font-weight: 300;
+}
+
+
+
+html{
+    font-size: 14px;
+    font-family: Gilroy;
+    font-weight: 200;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+p,h1{
+ margin: 0;
+ padding: 0;  
+ font-weight: inherit; 
+}
+
+.header{
+    position: absolute;
+    
+    padding-left: 8%;
+
+
+    display: flex;
+
+    align-items: center;
+    gap: 50%;
+
+}
+
+.navBlock{
+    
+    display: flex;
+
+    align-items: center;
+    gap: 3rem;
+}
+
+.navButton{
+    width: max-content;
+    font-size: 1.5rem;
+
+}
+
+.smLogo{
+    object-fit: cover;
+    width: 10vw;
+
+}
+
+.HelloBlock{
+    padding: 8% 0 10% 8%;
+
+    /* width: 100%; */
+    background-image: url(img/mainBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Title{
+    font-family: NyghtSerif;
+    font-size: 7rem;
+}
+
+.HelloBlock  .Title{
+    margin-bottom: 6%;
+    
+}
+
+.whiteSM{
+
+    border: 1px solid white;
+    padding: .7rem 3rem;
+    border-radius: 100px;
+    font-size: 1.5rem;
+}
+
+
+.AboutBlock{
+    padding: 10vh 5vh 0 8%;
+    background-color: #A66314;
+
+}
+
+.AboutFlexBlock{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.aboutTextBlock{
+
+    font-weight: 100;
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.BigTitle{
+    font-size: 5rem;
+}
+
+.subText{
+    display: flex;
+    position: relative;
+    top: -2rem;
+    left: 5rem;
+
+    margin-right: 5rem;
+
+    text-align: left;
+    color: #E49922;
+    font-family: NyghtSerif;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-size: 4.5rem;
+    line-height: normal;
+}
+
+.goldenSM{
+
+    position: relative;
+    top: -2rem;
+    
+    color: #E49922;
+
+    border: 0.8px solid #E49922;
+    border-radius: 50px;
+
+    font-size: 2rem;
+    padding: .7rem 3rem;
+}
+
+
+.FindBlock{
+    padding: 5vh 5vh 5vh 8%;
+}
+
+.cardBlock{
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+}
+
+.Card{
+    width: 25%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.Card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardMainText{
+    margin-top: 1.5rem;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.cardName{
+    font-family: NyghtSerif;
+    font-size: 2rem;
+}
+
+.cardThinText{
+    font-size: 1.5rem;
+}
+
+.centerCard{
+    transform: translateY(-3rem);
+    box-shadow:  -8px 8px 39px 3px rgba(228, 153, 3, 0.32)
+}
+
+.leftCard{
+    transform: rotateZ(-5deg);
+    box-shadow:  -8px 8px 39px 3px rgba(228, 153, 3, 0.32)
+}
+.rightCard{
+    transform: rotateZ(5deg);
+    box-shadow:  -8px 8px 39px 3px rgba(228, 153, 3, 0.32)
+}
+
+.goldenBig{
+    align-self: center;
+    font-size: 3rem;
+
+    color: #E49922;
+
+    padding: .7rem 3rem;
+    border: 0.8px solid #E49922;
+    border-radius: 50px;
+}
+
+.centerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer{
+    padding: 2rem 8% 3rem 8%;
+    border-top: #E49922 solid 1.5px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerContact{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.footerText{
+    text-align: end;
+}
+
+
+
+@media (max-width: 750px) {
+    html{
+        font-size: 10px;
+    }
+    
+    .navBlock{
+        display: none;
+    }
+
+
+    .AboutFlexBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    }
+
+    .Title{
+        font-size: 5rem;
+    }
+
+    .smLogo{
+        width: 30vw;
+        
+    }
+
+    .HelloBlock .Title{
+        padding-top: 3rem;
+    }
+
+    .aboutTextBlock{
+        gap: 2rem;
+    }
+
+    .cardBlock{
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .leftCard, .rightCard, .centerCard{
+        transform: none;
+    }
+    .Card{
+        width: max-content;
+    }
+
+
+    .goldenBig{
+        text-align: center;
+    }
+
+
+
+
+    .footerContact{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+
+    }
+    .footerText{
+        text-align: center;
+    }
+
+    .footer{
+        flex-direction: column;
+
+        gap: 3rem;
+    }
+
+    
+}
